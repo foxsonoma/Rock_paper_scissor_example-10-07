@@ -1,4 +1,11 @@
-public static void main(String[] args) {
+package Christopher;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class rockPaperScissor {
+
+    public static void main(String[] args) {
 
         //sudo code
         // take user input either rock, paper, scissors
@@ -43,11 +50,11 @@ public static void main(String[] args) {
                     break outerloop;
                 }
                 if(score_user >= 2){
-                    System.out.println("You have won! The computer won " + score_com + " matches and you won 5") ;
+                    System.out.println("You have won! The computer won " + score_com + " matches and you won " + score_user) ;
                     break outerloop;
                 }
                 if(score_com >= 2){
-                    System.out.println("You have lost the computer won. You won " + score_user + " the computer won 5") ;
+                    System.out.println("You have lost the computer won. You won " + score_user + " the computer won " + score_com) ;
                     break outerloop;
                 }
             }
@@ -82,3 +89,6 @@ public static void main(String[] args) {
 
             }
         }
+    }
+
+
